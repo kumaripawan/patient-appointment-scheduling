@@ -1,11 +1,15 @@
 import React from 'react';
+import './App.css'; // Ensure the path is correct
+import Login from './Login'; // Ensure the path is correct
+import Register from './Register'; // Ensure the path is correct
+import Dashboard from './Dashboard'; // Ensure the path is correct
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to React</h1>
-      </header>
+      <Login />
+      <Register />
+      <Dashboard />
     </div>
   );
 }
