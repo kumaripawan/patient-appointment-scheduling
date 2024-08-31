@@ -1,24 +1,24 @@
 pipeline {
     agent any
+
     stages {
         stage('Build') {
             steps {
                 echo 'Building...'
-                // Add your build steps here
+                sh 'npm install'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                // Add your test steps here
+                sh 'npm run test:ci'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // Add your deployment steps here
+                // Your deployment steps
             }
         }
     }
 }
- 
