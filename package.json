@@ -6,7 +6,7 @@
   "start": "react-scripts start",
   "build": "react-scripts build",
   "test": "react-scripts test",
-  "test:ci": "react-scripts test --watchAll=false --ci",
+  "test:ci": "CI=true react-scripts test --watchAll=false --ci",
   "lint": "eslint 'src/**/*.{js,jsx}'",
   "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
   "eject": "react-scripts eject"
