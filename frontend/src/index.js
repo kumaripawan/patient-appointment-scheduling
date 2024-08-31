@@ -1,14 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Import from 'react-dom/client' instead of 'react-dom'
-import './App.css'; // If you have a global CSS file
-import App from './App'; // Import your main App component
+import ReactDOM from 'react-dom/client';
+import './App.css';
+import App from './App';
 
-// Create a root element using ReactDOM.createRoot
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Ensure that the root element is present in your public/index.html
+const rootElement = document.getElementById('root');
 
-// Render your app
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Check if the root element exists and is a valid DOM element
+if (rootElement) {
+    const root = ReactDOM.createRoot(rootElement);
+
+    // Render your app
+    root.render(
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    );
+} 
+

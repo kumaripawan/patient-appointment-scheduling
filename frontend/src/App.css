@@ -14,26 +14,30 @@ body {
   background: linear-gradient(to right, #007bff, #00c6ff);
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px 20px;
   width: 100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-  font-size: 36px;
+  font-size: 48px; /* Increase font size */
   margin: 0;
   padding-bottom: 10px;
+  color: #ffcc00; /* Change color to a bright yellow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add some shadow for effect */
 }
 
 .header p {
-  font-size: 18px;
+  font-size: 24px; /* Increase font size */
   margin: 0;
+  color: #ffffff; /* Keep this white */
 }
 
 .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Adds space between feature boxes */
   margin: 30px 0;
   width: 80%;
 }
@@ -44,17 +48,17 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   margin: 15px;
   padding: 20px;
-  width: 200px;
+  width: 220px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
 .feature img {
-  width: 100px; /* Adjust the size as needed */
+  width: 100px;
   height: auto;
   margin-bottom: 15px;
-  border-radius: 5px; /* Optional: To give the images rounded corners */
+  border-radius: 5px;
 }
 
 .feature:hover {
@@ -63,11 +67,12 @@ body {
 
 .feature h3 {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 22px; /* Increase font size */
+  color: #007bff; /* Change color to match the header gradient */
 }
 
 .feature p {
-  font-size: 14px;
+  font-size: 16px; /* Increase font size */
   color: #666;
 }
 
@@ -76,36 +81,46 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 20px;
+  width: 350px; /* Make the container a bit wider */
+  margin: 20px auto;
 }
 
 .container h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
+  color: #28a745; /* Change color to green */
 }
 
 .container input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
   border-radius: 5px;
   border: 1px solid #ddd;
   box-sizing: border-box;
+  font-size: 16px; /* Increase input text size */
 }
 
 .container button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #28a745;
   border: none;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px; /* Increase button text size */
 }
 
 .container button:hover {
   background-color: #218838;
 }
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  width: 70%; /* Adjust the width accordingly */
+  margin: 0 auto;
+}
+
