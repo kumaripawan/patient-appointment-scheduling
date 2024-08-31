@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css'; // Ensure the path is correct
 import Login from './Login'; // Ensure the path is correct
 import Register from './Register'; // Ensure the path is correct
 import Dashboard from './Dashboard'; // Ensure the path is correct

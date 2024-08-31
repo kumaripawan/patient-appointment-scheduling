@@ -14,14 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@svgr/webpack": "^8.1.0",
-    "css-select": "^5.1.0",
-    "lru-cache": "^11.0.0",
-    "postcss": "^8.4.41",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "svgo": "^3.3.2"
+    
+  
+    
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
