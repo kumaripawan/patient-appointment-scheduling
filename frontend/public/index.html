@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React App</title>
+    <title>Patient Appointment Scheduling</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <header class="header">
+        <h1>Welcome to the Patient Appointment Scheduling Dashboard</h1>
+        <p>Your one-stop solution for managing appointments efficiently and securely.</p>
+    </header>
+
+    <section class="features">
+        <div class="feature" onclick="window.location.href='scheduling.html'">
+            <h3>Easy Appointment Scheduling</h3>
+            <p>Book appointments with just a few clicks, no hassle involved.</p>
+        </div>
+        <div class="feature" onclick="window.location.href='notifications.html'">
+            <h3>Automated Notifications</h3>
+            <p>Receive timely reminders for all your appointments.</p>
+        </div>
+        <div class="feature" onclick="window.location.href='security.html'">
+            <h3>Secure Login & Registration</h3>
+            <p>Your data is safe with our top-notch security measures.</p>
+        </div>
+        <div class="feature" onclick="window.location.href='dashboard.html'">
+            <h3>User Dashboard</h3>
+            <p>Manage all your appointments in one convenient location.</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" placeholder="Enter your email" />
+        <input type="password" placeholder="Enter your password" />
+        <button>Login</button>
+    </div>
+
+    <div class="container">
+        <h2>Register</h2>
+        <input type="text" placeholder="Enter your name" />
+        <input type="email" placeholder="Enter your email" />
+        <input type="password" placeholder="Enter your password" />
+        <button>Register</button>
+    </div>
 </body>
 </html>
